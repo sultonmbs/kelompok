@@ -7,10 +7,6 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
-  <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
-  <script src="<?php echo base_url();?>assets/js/jquery-1.7.1.min.js"></script>
-
 
   
 
@@ -45,7 +41,7 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
           </button>
-          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="<?= base_url('assets/assets/'); ?>#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -443,20 +439,6 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
 
     </div>
     <!-- row -->
-    <div id="notifications"><?php echo $this->session->flashdata('msg'); ?></div> 
-<br>
-<div class="col-sm-6 col-sm-offset-4">
-    <form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/welcome/insert_data" class="form-horizontal">
-        <div class="form-group">
-            <div class="col-sm-6">
-                <input type="text" class="form-control" name="kata"/>
-            </div>   
-            <div class="col-sm-6">   
-                <button type="submit" class="btn btn-default " >Submit</button>
-            </div>
-        </div>
-    </form>
-</div>
 
   </div>
   <!-- container -->
