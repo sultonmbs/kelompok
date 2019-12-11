@@ -41,13 +41,13 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
           </button>
-          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="<?= base_url('assets/assets/'); ?>#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+          <a class="navbar-brand hidden-xs hidden-sm smoothscroll" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#home" class="smoothscroll">UKM SENI</a></li>
             <li> <a href="#about"  class="smoothscroll"> Tentang</a></li>
-            <li> <a href="#contact" class="smoothscroll"> Data Pendaftar</a></li>
+            <li> <a href="<?= base_url('crud'); ?>" class="smoothscroll"> Data Pendaftar</a></li>
             <li> <a href="<?= base_url('auth/logout'); ?>"> Logout</a></li>
         </div>
         <!--/.nav-collapse -->
@@ -174,7 +174,7 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
             <tbody>
               <?php 
 
-              foreach($pendaftaran as $u):
+              foreach($data as $u):
               ?>
               <tr>
                 <td><?php echo $no++ ?></td>

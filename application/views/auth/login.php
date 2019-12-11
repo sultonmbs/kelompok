@@ -51,7 +51,7 @@
 						<button  type="submit" class="login100-form-btn">Login</button>
 					</div>
 					<br>
-					<center><button>Buat Akun</button>   /   <button>Lupa Password</button></center>
+					<center><button>Buat Akun</button>
 				</form>
 			</div>
 		</div>

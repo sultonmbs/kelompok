@@ -30,6 +30,20 @@ class Auth extends CI_Controller
       }
   }
 
+   public function pendaftar()
+  {
+      if (count($this->session->all_userdata()) == 1){
+        redirect('auth');
+      }
+      else{
+        $this->db->from('pendaftaran');
+        $data = $this->db->get()->row_array();
+        $this->load->view('auth/pendaftar',$data);
+      }
+
+
+  }
+
   public function logout(){
     $this->session->sess_destroy();
     redirect('auth');

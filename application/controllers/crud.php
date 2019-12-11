@@ -12,7 +12,7 @@ class Crud extends CI_Controller{
  
 	function index(){
 		$data['pendaftaran'] = $this->m_data->tampil_data()->result();
-		$this->load->view('dasboradmin',$data);
+		$this->load->view('auth/pendaftar',$data);
 	}
  
 	function tambah(){
@@ -45,23 +45,4 @@ function tambah_aksi(){
 		redirect('auth/dasbor');
 	}
  
-}
-
-function insert_data() {
-    $kata = $this->input->post('kata');
-    if($kata == null) {
-        $this->session->set_flashdata('msg', 
-                '<div class="alert alert-danger">
-                    <h4>Oppss</h4>
-                    <p>Tidak ada kata dinput.</p>
-                </div>');    
-        $this->load->view('welcome_message');      
-    } else {    
-        $this->session->set_flashdata('msg', 
-                '<div class="alert alert-success">
-                    <h4>Berhasil </h4>
-                    <p>Anda berhasil input kata '.$kata.'.</p>
-                </div>');    
-        $this->load->view('welcome_message');    
-    };
 }
