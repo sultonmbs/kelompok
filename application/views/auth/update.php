@@ -76,44 +76,33 @@
       <hr>
 
       <div class="col-lg">
-        <table  width="100%" style="margin:20px auto;" border="2">
-            <thead>
-              <tr>
-                <th style="text-align: center;">No</th>
-                <th style="text-align: center;">Nama</th>
-                <th style="text-align: center;">Email</th>
-                <th style="text-align: center;">Kontak</th>
-                <th style="text-align: center;">Tempat Lahir</th>
-                <th style="text-align: center;">Tanggal Lahir</th>
-                <th style="text-align: center;">Alamat</th>
-                <th style="text-align: center;">Prodi</th>
-                <th style="text-align: center;">Fakultas</th>
-                <th style="text-align: center;">Divisi</th>
-                <th style="text-align: center;">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php 
-              $no = 1;
-              foreach($pendaftaran as $pd):
-              ?>
-              <tr>
-                <td><?php echo $no++; ?></td>
-                <td><?php echo $pd->nama ?></td>
-                <td><?php echo $pd->email ?></td>
-                <td><?php echo $pd->kontak ?></td>
-                <td><?php echo $pd->tmpt_lahir ?></td>
-                <td><?php echo $pd->tgl_lahir ?></td>
-                <td><?php echo $pd->alamat ?></td>
-                <td><?php echo $pd->prodi ?></td>
-                <td><?php echo $pd->fakultas ?></td>
-                <td><?php echo $pd->divisi ?></td>
-                <td style="text-align: center;"><a href="<?php echo base_url('crud/update/'.$pd->id); ?>">Edit</a> || <a href="<?php echo base_url('crud/delete/'.$pd->id); ?>">Delete</a></td>
-              </tr>
-              <?php endforeach; ?>
-            </tbody>
-          </table>
-      </div>
+        <?php
+          foreach($pendaftaran as $pd):
+        ?>
+            <form action="" method="post">
+              <label for="nama">Nama</label></br>
+              <input type="text" name="nama" value="<?php echo $pd->nama ?>"></br>
+              <label for="email">Email</label></br>
+              <input type="text" name="email" value="<?php echo $pd->email ?>"></br>
+               <label for="kontak">Kontak</label></br>
+                <input type="text" name="kontak" value="<?php echo $pd->kontak ?>"></br>
+                <label for="tmpt_lahir">Tempat Lahir</label></br>
+                <input type="text" name="tmpt_lahir" value="<?php echo $pd->tmpt_lahir ?>"></br>
+                <label for="tgl_lahir">Tanggal Lahir</label></br>
+                <input type="text" name="tgl_lahir" value="<?php echo $pd->tgl_lahir ?>"></br>
+                <label for="alamat">Alamat</label></br>
+                <input type="text" name="alamat" value="<?php echo $pd->alamat ?>"></br>
+                <label for="prodi">Prodi</label></br>
+                <input type="text" name="prodi" value="<?php echo $pd->prodi ?>"></br>
+                <label for="fakultas">Fakultas</label></br>
+                <input type="text" name="fakultas" value="<?php echo $pd->fakultas ?>"></br>
+                 <label for="divisi">Divisi</label></br>
+                <input type="text" name="divisi" value="<?php echo $pd->divisi ?>"></br></br>
+                <input type="submit" name="update" value="update">
+              </form>
+            <?php endforeach; ?>
+                
+        </div>
       <!-- col-lg-6 -->
     </div>
 

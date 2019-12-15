@@ -50,5 +50,18 @@ function delete($id){
 
 		redirect('crud');
 	}
+
+function update($id){
+	$where = array('id' => $id);
+	$this->db->where($where);
+	$data['pendaftaran'] = $this->m_data->tampil_data()->result();
+	$this->load->view('auth/update', $data);
+
+	if ($this->input->post('update')) {
+		$this->m_data->update($id);
+
+		redirect('crud');
+	}
+}
 }
 ?>
