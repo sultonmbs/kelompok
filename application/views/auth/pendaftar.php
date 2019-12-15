@@ -45,9 +45,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#home" class="smoothscroll">UKM SENI</a></li>
-            <li> <a href="#about"  class="smoothscroll"> Tentang</a></li>
-            <li> <a href="<?= base_url('crud'); ?>" class="smoothscroll"> Data Pendaftar</a></li>
+            <li><a href="<?= base_url("auth/dasboradmin"); ?>#home" class="smoothscroll">UKM SENI</a></li>
+            <li> <a href="<?= base_url("auth/dasboradmin"); ?>#about"  class="smoothscroll"> Tentang</a></li>
+            <li> <a href="<?= base_url('crud'); ?>#about" class="smoothscroll"> Data Pendaftar</a></li>
             <li> <a href="<?= base_url('auth/logout'); ?>"> Logout</a></li>
         </div>
         <!--/.nav-collapse -->
@@ -108,7 +108,7 @@
                 <td><?php echo $pd->prodi ?></td>
                 <td><?php echo $pd->fakultas ?></td>
                 <td><?php echo $pd->divisi ?></td>
-                <td style="text-align: center;"><a href="<?php echo base_url('crud/update/'.$pd->id); ?>">Edit</a> || <a href="<?php echo base_url('crud/delete/'.$pd->id); ?>">Delete</a></td>
+                <td style="text-align: center;"><a href="">Edit</a> || <a href="<?php echo base_url('crud/delete/'.$pd->id); ?>">Delete</a></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
