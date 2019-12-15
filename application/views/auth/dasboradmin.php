@@ -47,7 +47,7 @@
           <ul class="nav navbar-nav">
             <li><a href="#home" class="smoothscroll">UKM SENI</a></li>
             <li> <a href="#about"  class="smoothscroll"> Tentang</a></li>
-            <li> <a href="<?= base_url('crud'); ?>" class="smoothscroll"> Data Pendaftar</a></li>
+            <li> <a href="<?= base_url('crud'); ?>#about" class="smoothscroll"> Data Pendaftar</a></li>
             <li> <a href="<?= base_url('auth/logout'); ?>"> Logout</a></li>
         </div>
         <!--/.nav-collapse -->
@@ -89,8 +89,7 @@ Unit kegiatan olahraga, (UKM Basket, UKM Futsal, UKM Bola Voli, UKM Renang)
 Unit kegiatan kesenian. (Unit Kegiatan Mahasiswa Musik (UKM Musik), UKM Tari, UKM Drama, UKM Seni dan Budaya dsb)
 Unit kegiatan khusus (Pramuka, Resimen mahasiswa, Pers mahasiswa, Koperasi mahasiswa, Unit kerohanian, Mahasiswa Pecinta Alam (Mapala), dsb).
 UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater , fotografi dan seni lukis.</p>
-<div class="limiter" align="left"> <button> EDIT </button>
-  </div>
+
       </div>
       <!-- col-lg-6 -->
     </div>
@@ -140,46 +139,12 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
   <!-- section -->
 
   <div class="container" id="contact" name="contact">
-    <div class="row">
-      <br>
-      <h1 class="centered">DATA PENDAFTARAN</h1>
-      <hr>
-      <br>
-      <br>
-
-      <div class="col-lg-4">
-        <h3>Tentang</h3>
-        <p style="text-align: justify;">Unit Kegiatan Mahasiswa (disingkat UKM) adalah wadah aktivitas kemahasiswaan luar kelas untuk mengembangkan minat, bakat dan keahlian tertentu. Lembaga ini merupakan partner organisasi kemahasiswaan intra kampus lainnya seperti senat mahasiswa dan badan eksekutif mahasiswa, baik yang berada di tingkat program studi, jurusan, maupun universitas. Lembaga ini bersifat otonom, dan bukan sebagai cabang dari badan eksekutif maupun senat mahasiswa.</p>
+      <div class="">
+        <h3 class="centered">Tentang</h3>
+        <p style="text-align: justify;">Unit Kegiatan Mahasiswa (disingkat UKM) adalah wadah aktivitas kemahasiswaan luar kelas untuk mengembangkan minat, bakat dan keahlian tertentu. Lembaga ini merupakan partner organisasi kemahasiswaan intra kampus lainnya seperti senat mahasiswa dan badan eksekutif mahasiswa, baik yang berada di tingkat program studi, jurusan, maupun universitas. Lembaga ini bersifat otonom, dan bukan sebagai cabang dari badan eksekutif maupun senat mahasiswa. Unit kegiatan mahasiswa terdiri dari tiga kelompok minat: Unit kegiatan olahraga, (UKM Basket, UKM Futsal, UKM Bola Voli, UKM Renang) Unit kegiatan kesenian. (Unit Kegiatan Mahasiswa Musik (UKM Musik), UKM Tari, UKM Drama, UKM Seni dan Budaya dsb) Unit kegiatan khusus (Pramuka, Resimen mahasiswa, Pers mahasiswa, Koperasi mahasiswa, Unit kerohanian, Mahasiswa Pecinta Alam (Mapala), dsb). UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater , fotografi dan seni lukis.</p>
         
       </div>
-
       <!-- col -->
-
-      <div class="col-lg-8">
-          <table  width="100%" style="margin:20px auto;" border="2">
-            <thead>
-              <tr>
-                <th style="text-align: center;">No</th>
-                <th style="text-align: center;">Nama</th>
-                <th style="text-align: center;">Email</th>
-                <th style="text-align: center;">Kontak</th>
-                <th style="text-align: center;">Tempat Lahir</th>
-                <th style="text-align: center;">Tanggal Lahir</th>
-                <th style="text-align: center;">Alamat</th>
-                <th style="text-align: center;">Prodi</th>
-                <th style="text-align: center;">Fakultas</th>
-                <th style="text-align: center;">Divisi</th>
-              </tr>
-            </thead>
-          
-          </table>
-
-      </div>
-      <!-- col -->
-
-
-    </div>
-    <!-- row -->
 
   </div>
   <!-- container -->
