@@ -171,24 +171,7 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
                 <th style="text-align: center;">Divisi</th>
               </tr>
             </thead>
-            <tbody>
-              <?php 
-
-              foreach($data as $u):
-              ?>
-              <tr>
-                <td><?php echo $no++ ?></td>
-                <td><?php echo $u->nama ?></td>
-                <td><?php echo $u->email ?></td>
-                <td><?php echo $u->kontak ?></td>
-                <td><?php echo $u->tmpt_lahir ?></td>
-                <td><?php echo $u->tgl_lahir ?></td>
-                <td><?php echo $u->alamat ?></td>
-                <td><?php echo $u->prodi ?></td>
-                <td><?php echo $u->fakultas ?></td>
-                <td><?php echo $u->divisi ?></td>
-              </tr>
-              <?php endforeach; ?>
+          
           </table>
 
       </div>
