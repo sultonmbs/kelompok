@@ -430,7 +430,7 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
             </tr>
             <tr>
               <td></td>
-              <td><input type="submit" value="Daftar"></td>
+              <td><input type="submit" onclick="return confirm('Tekan OK untuk mendaftar');" value="Daftar"></td>
             </tr>
           </table>
         </form> 
