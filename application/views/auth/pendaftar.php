@@ -108,7 +108,7 @@
                 <td><?php echo $pd->prodi ?></td>
                 <td><?php echo $pd->fakultas ?></td>
                 <td><?php echo $pd->divisi ?></td>
-                <td style="text-align: center;"><a href="">Edit</a> || <a href="<?php echo base_url('crud/delete/'.$pd->id); ?>">Delete</a></td>
+                <td style="text-align: center;"><a href="<?php echo base_url('crud/update/'.$pd->id); ?>">Edit</a> || <a href="<?php echo base_url('crud/delete/'.$pd->id); ?>">Delete</a></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
