@@ -40,9 +40,15 @@ function tambah_aksi(){
 			'prodi' => $prodi,
 			'fakultas' => $fakultas,
 			'divisi' => $divisi
+			
 			);
 		$this->m_data->input_data($data,'pendaftaran');
 		redirect('auth/dasbor');
 	}
- 
+function delete($id){
+		$this->m_data->delete($id);
+
+		redirect('crud');
+	}
 }
+?>

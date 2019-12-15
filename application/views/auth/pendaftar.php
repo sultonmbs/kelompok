@@ -89,6 +89,7 @@
                 <th style="text-align: center;">Prodi</th>
                 <th style="text-align: center;">Fakultas</th>
                 <th style="text-align: center;">Divisi</th>
+                <th style="text-align: center;">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -107,6 +108,7 @@
                 <td><?php echo $pd->prodi ?></td>
                 <td><?php echo $pd->fakultas ?></td>
                 <td><?php echo $pd->divisi ?></td>
+                <td style="text-align: center;"><a href="">Edit</a> || <a href="<?php echo base_url('crud/delete/'.$pd->id); ?>">Delete</a></td>
               </tr>
               <?php endforeach; ?>
             </tbody>

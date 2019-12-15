@@ -8,4 +8,11 @@ class M_data extends CI_Model{
 	function input_data($data,$table){
 		$this->db->insert($table,$data);
 	}
+
+	function delete($id){
+		$where = array('id' => $id);
+		$this->db->where($where);
+		$this->db->delete('pendaftaran');
+	}
 }
+?>
