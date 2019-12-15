@@ -123,7 +123,7 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
       <br>
       <br>
       <div class="col-lg-3 centered">
-        <img class="<?= base_url('assets/assets/img img-circle src= img/team/team01.jpg'); ?>" height="120px" width="120px" alt="">
+        <img src="<?php echo base_url()?>assets/images/img-01.png" alt="" height="150">
         <br>
         <h4><b>PENGURUS HARIAN</b></h4>
       
@@ -135,7 +135,7 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
       <!-- col-lg-3 -->
 
       <div class="col-lg-3 centered">
-        <img class="<?= base_url('assets/assets/img img-circle src=img/team/team02.jpg'); ?>" height="120px" width="120px" alt="">
+        <img src="<?php echo base_url()?>assets/images/img-01.png" alt="" height="150">
         <br>
         <h4><b>DIVISI PSDM</b></h4>
       
@@ -147,7 +147,7 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
       <!-- col-lg-3 -->
 
       <div class="col-lg-3 centered">
-        <img class="<?= base_url('assets/assets/img img-circle src=img/team/team03.jpg'); ?>" height="120px" width="120px" alt="">
+        <img src="<?php echo base_url()?>assets/images/img-01.png" alt="" height="150">
         <br>
         <h4><b>DIVISI HUMAS</b></h4>
     
@@ -159,7 +159,7 @@ UKM SENI ini terdapat banyak devisi yaitu seni musik , seni tari , seni teater ,
       <!-- col-lg-3 -->
 
       <div class="col-lg-3 centered">
-        <img class="<?= base_url('assets/assets/img img-circle src=img/team/team04.jpg'); ?>" height="120px" width="120px" alt="">
+        <img src="<?php echo base_url()?>assets/images/img-01.png" alt="" height="150">
         <br>
         <h4><b>DIVISI LOGISTIK</b></h4>
       
